@@ -14,10 +14,9 @@ return new class extends Migration
         Schema::create('prabotans', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('title');
-            $table->string('description');
-            $table->integer('stock');
-            $table->bigInteger('price');
+            $table->string('deskripsi');
+            $table->integer('stok');
+            $table->decimal('harga');
             $table->timestamps();
         });
     }
